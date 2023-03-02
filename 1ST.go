@@ -30,3 +30,4 @@ func main() {
 }
 //just a golang program related to cloud
 //understand every line and modify itS
+//1st.go:7:2: no required module provides package cloud.google.com/go/storage: go.mod file not found in current directory or any parent directory; see 'go help modules'
