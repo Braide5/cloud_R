@@ -18,11 +18,15 @@ func main() {
     infoHandler := func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "Information about me!")
     }
+    contactHandler := func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "contact me!")
+    }
     
     // Register the handlers
     http.HandleFunc("/", rootHandler)
     http.HandleFunc("/about", aboutHandler)
     http.HandleFunc("/info", infoHandler)
+    http.HandleFunc("/contact", contactHandler)
 
     // Start the server
     fmt.Println("Starting server on port 8080")
