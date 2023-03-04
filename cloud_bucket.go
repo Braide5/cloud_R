@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
+	//context is a standard package of Golang that makes it easy to pass request-scoped values, cancelation signals, and deadlines across API boundaries to all the goroutines involved in handling a request.
 	"fmt"
-
 	"cloud.google.com/go/storage"
 )
 
