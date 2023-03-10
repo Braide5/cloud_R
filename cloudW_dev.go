@@ -10,15 +10,8 @@ import (
 func main() {
     // Define a handler function for the root path
     rootHandler := func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Welcome to my website!")
-        // Set the seed value for the random number generator
-    rand.Seed(time.Now().UnixNano())
-
-    // Generate and print 10 random integers between 0 and 99
-    for i := 0; i < 10; i++ {
-        fmt.Println(rand.Intn(100))
+        fmt.Fprintf(w, "Welcome to my website!")    
     }
-}
 
     // Define a handler function for the "/about" path
     aboutHandler := func(w http.ResponseWriter, r *http.Request) {
